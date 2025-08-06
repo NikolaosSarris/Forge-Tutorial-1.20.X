@@ -1,6 +1,7 @@
 package net.greekboy.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.greekboy.tutorialmod.item.ModCreativeModeTabs;
 import net.greekboy.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -29,6 +30,8 @@ public class TutorialMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
@@ -52,6 +55,7 @@ public class TutorialMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
         }
     }
 
