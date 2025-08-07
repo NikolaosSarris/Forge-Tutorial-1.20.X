@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "greekboymod:sapphire"
+    }
+  },
+  "result": {
+    "item": "greekboymod:sapphire_block"
+  }
+}

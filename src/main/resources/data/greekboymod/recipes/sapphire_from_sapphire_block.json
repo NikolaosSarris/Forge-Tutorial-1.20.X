@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients":[
+    {
+      "item": "greekboymod:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "greekboymod:sapphire",
+    "count": 9
+  }
+}
