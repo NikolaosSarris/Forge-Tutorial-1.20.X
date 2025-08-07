@@ -2,5 +2,9 @@
   "item.greekboymod.sapphire": "Sapphire",
   "item.greekboymod.raw_sapphire": "Raw Sapphire",
   "item.greekboymod.holy_cross": "Holy Cross",
+
+  "block.greekboymod.sapphire_block": "Block of Sapphire",
+  "block.greekboymod.raw_sapphire_block": "Block of Raw Sapphire",
+
   "creativetab.tutorial_tab": "GreekBoy Mod"
 }
