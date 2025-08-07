@@ -1,10 +1,16 @@
 {
   "item.greekboymod.sapphire": "Sapphire",
   "item.greekboymod.raw_sapphire": "Raw Sapphire",
-  "item.greekboymod.holy_cross": "Holy Cross",
 
   "block.greekboymod.sapphire_block": "Block of Sapphire",
   "block.greekboymod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "block.greekboymod.sapphire_ore": "Sapphire Ore",
+  "block.greekboymod.deeplslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.greekboymod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.greekboymod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+
+  "item.greekboymod.holy_cross": "Holy Cross",
 
   "creativetab.tutorial_tab": "GreekBoy Mod"
 }
