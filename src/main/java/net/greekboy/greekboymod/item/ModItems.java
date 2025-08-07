@@ -1,6 +1,6 @@
-package net.greekboy.tutorialmod.item;
+package net.greekboy.greekboymod.item;
 
-import net.greekboy.tutorialmod.TutorialMod;
+import net.greekboy.greekboymod.TutorialMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

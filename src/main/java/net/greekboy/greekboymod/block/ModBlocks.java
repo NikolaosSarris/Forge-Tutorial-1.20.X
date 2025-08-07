@@ -1,7 +1,7 @@
-package net.greekboy.tutorialmod.block;
+package net.greekboy.greekboymod.block;
 
-import net.greekboy.tutorialmod.TutorialMod;
-import net.greekboy.tutorialmod.item.ModItems;
+import net.greekboy.greekboymod.TutorialMod;
+import net.greekboy.greekboymod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

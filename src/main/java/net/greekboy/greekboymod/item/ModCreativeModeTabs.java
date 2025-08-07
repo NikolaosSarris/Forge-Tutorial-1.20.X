@@ -1,7 +1,7 @@
-package net.greekboy.tutorialmod.item;
+package net.greekboy.greekboymod.item;
 
-import net.greekboy.tutorialmod.TutorialMod;
-import net.greekboy.tutorialmod.block.ModBlocks;
+import net.greekboy.greekboymod.TutorialMod;
+import net.greekboy.greekboymod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

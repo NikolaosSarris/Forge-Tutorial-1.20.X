@@ -1,9 +1,9 @@
-package net.greekboy.tutorialmod;
+package net.greekboy.greekboymod;
 
 import com.mojang.logging.LogUtils;
-import net.greekboy.tutorialmod.block.ModBlocks;
-import net.greekboy.tutorialmod.item.ModCreativeModeTabs;
-import net.greekboy.tutorialmod.item.ModItems;
+import net.greekboy.greekboymod.block.ModBlocks;
+import net.greekboy.greekboymod.item.ModCreativeModeTabs;
+import net.greekboy.greekboymod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
