@@ -2,6 +2,7 @@ package net.greekboy.greekboymod.item;
 
 import net.greekboy.greekboymod.TutorialMod;
 import net.greekboy.greekboymod.item.custom.MetalDetectorItem;
+import net.greekboy.greekboymod.item.custom.PipeWrenchItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,6 +29,13 @@ public class ModItems
     //Static variable for the metal detector
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+
+    public static final RegistryObject<Item> PIPE_WRENCH = ITEMS.register("pipe_wrench",
+            () -> new PipeWrenchItem(new Item.Properties()
+                    .durability(250),        // How many uses before it breaks
+                    6.0F,                   // Attack damage (6 = 7 hearts total damage)
+                    -2.8F                   // Attack speed (-2.8F = 1.2 attacks per second)
+            ));
 
     //Static method the register the items
     public static void register(IEventBus eventBus)

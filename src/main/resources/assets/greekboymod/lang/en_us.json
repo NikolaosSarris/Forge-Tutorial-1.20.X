@@ -14,5 +14,9 @@
 
   "item.greekboymod.metal_detector": "Metal Detector",
 
+  "item.greekboymod.pipe_wrench": "Pipe Wrench",
+
+  "block.greekboymod.sound_block": "Sound Block",
+
   "creativetab.tutorial_tab": "GreekBoy Mod"
 }

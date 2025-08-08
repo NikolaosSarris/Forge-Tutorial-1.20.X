@@ -37,6 +37,10 @@ public class ModCreativeModeTabs
 
                         output.accept(ModItems.METAL_DETECTOR.get());
 
+                        output.accept(ModItems.PIPE_WRENCH.get());
+
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
+
                     })
                     .build());
 
