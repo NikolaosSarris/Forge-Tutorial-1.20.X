@@ -35,6 +35,8 @@ public class ModCreativeModeTabs
 
                         output.accept(ModItems.HOLY_CROSS.get());
 
+                        output.accept(ModItems.METAL_DETECTOR.get());
+
                     })
                     .build());
 

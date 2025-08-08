@@ -1,6 +1,7 @@
 package net.greekboy.greekboymod.item;
 
 import net.greekboy.greekboymod.TutorialMod;
+import net.greekboy.greekboymod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,6 +24,10 @@ public class ModItems
     //Static variable to hold the cross
     public static final RegistryObject<Item> HOLY_CROSS = ITEMS.register("holy_cross",
             () -> new Item(new Item.Properties()));
+
+    //Static variable for the metal detector
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
     //Static method the register the items
     public static void register(IEventBus eventBus)
