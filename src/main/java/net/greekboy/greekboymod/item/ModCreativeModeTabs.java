@@ -41,6 +41,9 @@ public class ModCreativeModeTabs
 
                         output.accept(ModBlocks.SOUND_BLOCK.get());
 
+                        output.accept(ModItems.STRAWBERRY.get());
+                        output.accept(ModItems.ROIDS_BOTTLE.get());
+
                     })
                     .build());
 

@@ -30,12 +30,21 @@ public class ModItems
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
+    //Static variable for the pipe wrench
     public static final RegistryObject<Item> PIPE_WRENCH = ITEMS.register("pipe_wrench",
             () -> new PipeWrenchItem(new Item.Properties()
                     .durability(250),        // How many uses before it breaks
                     6.0F,                   // Attack damage (6 = 7 hearts total damage)
                     -2.8F                   // Attack speed (-2.8F = 1.2 attacks per second)
             ));
+
+    //Static variable for the strawberry
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+
+    //Static variable for the roids bottle
+    public static final RegistryObject<Item> ROIDS_BOTTLE = ITEMS.register("roids_bottle",
+            () -> new Item(new Item.Properties().food(ModFoods.ROIDS_BOTTLE)));
 
     //Static method the register the items
     public static void register(IEventBus eventBus)
