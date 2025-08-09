@@ -23,5 +23,7 @@
 
   "item.greekboymod.pine_cone": "Pine Cone",
 
+  "tooltip.greekboymod.metal_detector.tooltip": "Finds valuables underground",
+
   "creativetab.tutorial_tab": "GreekBoy Mod"
 }
