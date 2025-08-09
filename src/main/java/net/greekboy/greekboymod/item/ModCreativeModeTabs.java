@@ -44,6 +44,8 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.STRAWBERRY.get());
                         output.accept(ModItems.ROIDS_BOTTLE.get());
 
+                        output.accept(ModItems.PINE_CONE.get());
+
                     })
                     .build());
 

@@ -1,6 +1,7 @@
 package net.greekboy.greekboymod.item;
 
 import net.greekboy.greekboymod.TutorialMod;
+import net.greekboy.greekboymod.item.custom.FuelItem;
 import net.greekboy.greekboymod.item.custom.MetalDetectorItem;
 import net.greekboy.greekboymod.item.custom.PipeWrenchItem;
 import net.minecraft.world.item.Item;
@@ -38,13 +39,17 @@ public class ModItems
                     -2.8F                   // Attack speed (-2.8F = 1.2 attacks per second)
             ));
 
-    //Static variable for the strawberry
+    //Static variable for the strawberry which is food
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 
-    //Static variable for the roids bottle
+    //Static variable for the roids bottle which is food
     public static final RegistryObject<Item> ROIDS_BOTTLE = ITEMS.register("roids_bottle",
             () -> new Item(new Item.Properties().food(ModFoods.ROIDS_BOTTLE)));
+
+    //Static variable for the pine cone which is a fuel item
+    public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
+            () -> new FuelItem(new Item.Properties(), 400));
 
     //Static method the register the items
     public static void register(IEventBus eventBus)
