@@ -27,6 +27,10 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.PINE_CONE);
         simpleItem(ModItems.STRAWBERRY);
+
+        simpleItem(ModItems.HOLY_CROSS);
+        simpleItem(ModItems.PIPE_WRENCH);
+        simpleItem(ModItems.ROIDS_BOTTLE);
     }
 
     //Helper method to create json files for a simple item to be added

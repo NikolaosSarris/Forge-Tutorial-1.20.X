@@ -5,6 +5,8 @@ import net.greekboy.greekboymod.block.ModBlocks;
 import net.greekboy.greekboymod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -49,6 +51,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HOLY_CROSS.get())
+                .pattern(" S ")
+                .pattern("SSS")
+                .pattern(" S ")
+                .define('S', ItemTags.PLANKS)  // Use tag instead of specific plank
+                .unlockedBy("has_planks", has(ItemTags.PLANKS))  // Better unlock condition
                 .save(pWriter);
     }
 
