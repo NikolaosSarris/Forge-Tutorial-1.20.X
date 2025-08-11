@@ -23,6 +23,19 @@
 
   "item.greekboymod.pine_cone": "Pine Cone",
 
+  "block.greekboymod.sapphire_stairs": "Sapphire Stairs",
+  "block.greekboymod.sapphire_slab": "Sapphire Slab",
+  "block.greekboymod.sapphire_button": "Sapphire Button",
+  "block.greekboymod.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.greekboymod.sapphire_fence": "Sapphire Fence",
+  "block.greekboymod.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.greekboymod.sapphire_wall": "Sapphire Wall",
+  "block.greekboymod.sapphire_door": "Sapphire Door",
+  "block.greekboymod.sapphire_trapdoor": "Sapphire Trapdoor",
+
+  "item.greekboymod.sapphire_staff": "Sapphire Staff",
+
+
   "tooltip.greekboymod.metal_detector.tooltip": "Finds valuables underground",
 
   "creativetab.tutorial_tab": "GreekBoy Mod"

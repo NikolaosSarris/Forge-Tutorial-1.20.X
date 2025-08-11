@@ -51,6 +51,10 @@ public class ModItems
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 400));
 
+    //Static variable for the sapphire staff which is a 3D item
+    public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     //Static method the register the items
     public static void register(IEventBus eventBus)
     {
