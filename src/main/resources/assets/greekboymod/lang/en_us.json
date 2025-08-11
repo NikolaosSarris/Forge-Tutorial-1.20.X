@@ -35,6 +35,11 @@
 
   "item.greekboymod.sapphire_staff": "Sapphire Staff",
 
+  "item.greekboymod.sapphire_sword": "Sapphire Sword",
+  "item.greekboymod.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.greekboymod.sapphire_axe": "Sapphire Axe",
+  "item.greekboymod.sapphire_shovel": "Sapphire Shovel",
+  "item.greekboymod.sapphire_hoe": "Sapphire Hoe",
 
   "tooltip.greekboymod.metal_detector.tooltip": "Finds valuables underground",
 

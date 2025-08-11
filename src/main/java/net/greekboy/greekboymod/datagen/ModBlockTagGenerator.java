@@ -9,6 +9,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -50,6 +51,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL); //.add
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL); //.add
+
+        //Custom tag for sapphire
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
+                .add(ModBlocks.SOUND_BLOCK.get()); //.add
 
         //Tags for the fence types so they are able to connect with each other
         this.tag(BlockTags.FENCES)
