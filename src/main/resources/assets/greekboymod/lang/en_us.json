@@ -41,6 +41,11 @@
   "item.greekboymod.sapphire_shovel": "Sapphire Shovel",
   "item.greekboymod.sapphire_hoe": "Sapphire Hoe",
 
+  "item.greekboymod.sapphire_helmet": "Sapphire Helmet",
+  "item.greekboymod.sapphire_chestplate": "Sapphire Chestplate",
+  "item.greekboymod.sapphire_leggings": "Sapphire Leggings",
+  "item.greekboymod.sapphire_boots": "Sapphire Boots",
+
   "tooltip.greekboymod.metal_detector.tooltip": "Finds valuables underground",
 
   "creativetab.tutorial_tab": "GreekBoy Mod"

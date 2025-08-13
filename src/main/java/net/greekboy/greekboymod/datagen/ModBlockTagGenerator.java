@@ -25,7 +25,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider
     {
         //Generates tag json file
         this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
-                .add(ModBlocks.SAPPHIRE_ORE.get()).addTags(Tags.Blocks.ORES);
+                .add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES);
 
         //Makes block minable with a pickaxe specifically
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
