@@ -3,6 +3,7 @@ package net.greekboy.greekboymod.datagen.loot;
 import net.greekboy.greekboymod.TutorialMod;
 import net.greekboy.greekboymod.item.ModItems;
 import net.greekboy.greekboymod.loot.AddItemModifier;
+import net.greekboy.greekboymod.loot.AddSusSandItemModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -36,6 +37,10 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider
         //Add drop that can be found in a jungle temple with 100% certainty
         add("metal_detector_from_jungle_temples", new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/jungle_temple")).build()},
+                ModItems.METAL_DETECTOR.get()));
+
+        add("metal_detector_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(ResourceLocation.fromNamespaceAndPath("minecraft", "archaeology_desert_pyramid")).build()},
                 ModItems.METAL_DETECTOR.get()));
     }
 }
