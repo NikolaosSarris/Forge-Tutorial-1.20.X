@@ -1,6 +1,5 @@
 package net.greekboy.greekboymod.datagen;
 
-import com.google.common.eventbus.Subscribe;
 import net.greekboy.greekboymod.TutorialMod;
 import net.greekboy.greekboymod.datagen.loot.ModGlobalLootModifiersProvider;
 import net.minecraft.core.HolderLookup;
