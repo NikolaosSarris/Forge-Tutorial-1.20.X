@@ -3,6 +3,7 @@ package net.greekboy.greekboymod.item;
 import net.greekboy.greekboymod.TutorialMod;
 import net.greekboy.greekboymod.item.custom.FuelItem;
 import net.greekboy.greekboymod.item.custom.MetalDetectorItem;
+import net.greekboy.greekboymod.item.custom.ModArmorItem;
 import net.greekboy.greekboymod.item.custom.PipeWrenchItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -67,8 +68,9 @@ public class ModItems
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
 
+    //Variables for the custom armor with a status effect
     public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
-        () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+        () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings",
