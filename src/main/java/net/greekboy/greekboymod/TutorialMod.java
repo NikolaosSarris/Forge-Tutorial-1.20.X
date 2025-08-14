@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.greekboy.greekboymod.block.ModBlocks;
 import net.greekboy.greekboymod.item.ModCreativeModeTabs;
 import net.greekboy.greekboymod.item.ModItems;
+import net.greekboy.greekboymod.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,6 +40,9 @@ public class TutorialMod
 
         //Registers the custom blocks
         ModBlocks.register(modEventBus);
+
+        //Registers the loot modifiers
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
