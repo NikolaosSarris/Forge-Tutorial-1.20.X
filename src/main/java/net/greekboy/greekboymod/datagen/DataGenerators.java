@@ -1,7 +1,6 @@
 package net.greekboy.greekboymod.datagen;
 
 import net.greekboy.greekboymod.TutorialMod;
-import net.greekboy.greekboymod.datagen.loot.ModGlobalLootModifiersProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

@@ -1,4 +1,4 @@
-package net.greekboy.greekboymod.datagen.loot;
+package net.greekboy.greekboymod.datagen;
 
 import net.greekboy.greekboymod.TutorialMod;
 import net.greekboy.greekboymod.item.ModItems;

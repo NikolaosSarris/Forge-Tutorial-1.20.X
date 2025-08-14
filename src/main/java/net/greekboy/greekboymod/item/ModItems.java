@@ -1,6 +1,7 @@
 package net.greekboy.greekboymod.item;
 
 import net.greekboy.greekboymod.TutorialMod;
+import net.greekboy.greekboymod.block.ModBlocks;
 import net.greekboy.greekboymod.item.custom.FuelItem;
 import net.greekboy.greekboymod.item.custom.MetalDetectorItem;
 import net.greekboy.greekboymod.item.custom.ModArmorItem;
@@ -78,6 +79,9 @@ public class ModItems
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    //Static variable for the strawberry seeds
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
 
     //Static method the register the items
     public static void register(IEventBus eventBus)

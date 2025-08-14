@@ -57,6 +57,7 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(ModItems.HOLY_CROSS);
         simpleItem(ModItems.PIPE_WRENCH);
         simpleItem(ModItems.ROIDS_BOTTLE);
+        simpleItem(ModItems.STRAWBERRY_SEEDS);
 
         //Add door item
         doorItem(ModBlocks.SAPPHIRE_DOOR);

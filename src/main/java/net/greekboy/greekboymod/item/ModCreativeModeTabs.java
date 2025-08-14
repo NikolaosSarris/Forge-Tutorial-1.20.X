@@ -69,6 +69,8 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                         output.accept(ModItems.SAPPHIRE_LEGGINGS.get());
                         output.accept(ModItems.SAPPHIRE_BOOTS.get());
+
+                        output.accept(ModItems.STRAWBERRY_SEEDS.get());
                     })
                     .build());
 

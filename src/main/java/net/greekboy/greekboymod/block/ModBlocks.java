@@ -2,6 +2,7 @@ package net.greekboy.greekboymod.block;
 
 import net.greekboy.greekboymod.TutorialMod;
 import net.greekboy.greekboymod.block.custom.SoundBlock;
+import net.greekboy.greekboymod.block.custom.StrawberryCropBlock;
 import net.greekboy.greekboymod.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -76,6 +77,11 @@ public class ModBlocks
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
     public static final RegistryObject<Block> SAPPHIRE_TRAPDOOR = registerBlock("sapphire_trap_door",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
+
+    //Variable for the crops
+    public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
+            () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
 
     //Helper method to register the block
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
