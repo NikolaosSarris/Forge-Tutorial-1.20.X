@@ -6,6 +6,8 @@ import net.greekboy.greekboymod.item.ModCreativeModeTabs;
 import net.greekboy.greekboymod.item.ModItems;
 import net.greekboy.greekboymod.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -56,7 +58,10 @@ public class TutorialMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        //Adding flower to a pot using right click
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CATMINT.getId(), ModBlocks.POTTED_CATMINT);
+        });
     }
 
     // Add the example block item to the building blocks tab

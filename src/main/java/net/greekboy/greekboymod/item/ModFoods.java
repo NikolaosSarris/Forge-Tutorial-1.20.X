@@ -11,6 +11,7 @@ public class ModFoods
     public static final FoodProperties STRAWBERRY = new FoodProperties.Builder().nutrition(2)
             .saturationMod(0.2f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 0.1f).build();
 
+    //Variable to hold the roids bottle item
     public static final FoodProperties ROIDS_BOTTLE = new FoodProperties.Builder().nutrition(8)
             .saturationMod(0.5f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 10000), 1f)
@@ -21,4 +22,7 @@ public class ModFoods
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 10000), 1f)
             .effect(() -> new MobEffectInstance(MobEffects.SATURATION, 10000), 1f)
             .build();
+
+    public static final FoodProperties CORN = new FoodProperties.Builder().nutrition(5)
+            .saturationMod(0.6f).effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200), 0.1f).build();
 }

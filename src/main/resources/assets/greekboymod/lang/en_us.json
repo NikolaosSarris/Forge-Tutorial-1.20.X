@@ -48,6 +48,11 @@
 
   "item.greekboymod.strawberry_seeds": "Strawberry Seeds",
 
+  "item.greekboymod.corn_": "Corn",
+  "item.greekboymod.corn_seeds": "Corn Seeds",
+
+  "item.greekboymod.catmint": "Catmint",
+
   "tooltip.greekboymod.metal_detector.tooltip": "Finds valuables underground",
 
   "creativetab.tutorial_tab": "GreekBoy Mod"

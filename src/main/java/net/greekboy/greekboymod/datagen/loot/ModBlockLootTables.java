@@ -1,6 +1,7 @@
 package net.greekboy.greekboymod.datagen.loot;
 
 import net.greekboy.greekboymod.block.ModBlocks;
+import net.greekboy.greekboymod.block.custom.CornCropBlock;
 import net.greekboy.greekboymod.block.custom.StrawberryCropBlock;
 import net.greekboy.greekboymod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -69,6 +70,23 @@ public class ModBlockLootTables extends BlockLootSubProvider
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE, 5));
         this.add(ModBlocks.STRAWBERRY_CROP.get(), createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
                 ModItems.STRAWBERRY_SEEDS.get(), lootitemcondition$builder));
+
+        //Commented code makes it so that the corn can drop at multiples layers of the crop
+        LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8));
+//                .or(LootItemBlockStatePropertyCondition
+//                        .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+//                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8)));
+
+
+        //Adding the corn crop item
+        this.add(ModBlocks.CORN_CROP.get(), createCropDrops(ModBlocks.CORN_CROP.get(), ModItems.CORN.get(),
+                ModItems.CORN_SEEDS.get(), lootitemcondition$builder2));
+
+        //Adding flower and it being able to be in a pot
+        this.dropSelf(ModBlocks.CATMINT.get());
+        this.add(ModBlocks.POTTED_CATMINT.get(), createPotFlowerItemTable(ModBlocks.CATMINT.get()));
     }
 
     //Methods that can be customized to make a specific block drop type

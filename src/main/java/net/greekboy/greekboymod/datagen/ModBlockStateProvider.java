@@ -2,6 +2,7 @@ package net.greekboy.greekboymod.datagen;
 
 import net.greekboy.greekboymod.TutorialMod;
 import net.greekboy.greekboymod.block.ModBlocks;
+import net.greekboy.greekboymod.block.custom.CornCropBlock;
 import net.greekboy.greekboymod.block.custom.StrawberryCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -54,6 +55,15 @@ public class ModBlockStateProvider extends BlockStateProvider
 
         //Adds the strawberry crop
         makeStrawberryCrop((CropBlock) ModBlocks.STRAWBERRY_CROP.get(), "strawberry_stage", "strawberry_stage");
+
+        //Adds a tall crop
+        makeCornCrop((CornCropBlock) ModBlocks.CORN_CROP.get(), "corn_stage_", "corn_stage_");
+
+        //Adds flower and its pot variation
+        simpleBlockWithItem(ModBlocks.CATMINT.get(), models().cross(blockTexture(ModBlocks.CATMINT.get()).getPath(),
+                blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_CATMINT.get(), models().singleTexture("potted_catmint", ResourceLocation.fromNamespaceAndPath("minecraft", "flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
     }
 
     //Helper method to create the strawberry crop
@@ -70,6 +80,24 @@ public class ModBlockStateProvider extends BlockStateProvider
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((StrawberryCropBlock) block).getAgeProperty()),
                 ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(((StrawberryCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+    //Helper method to make the corn crop
+    public void makeCornCrop(CropBlock block, String modelName, String textureName)
+    {
+        Function<BlockState, ConfiguredModel[]> function = state -> cornStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    //Helper method to make the corn states
+    private ConfiguredModel[] cornStates(BlockState state, CropBlock block, String modelName, String textureName)
+    {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((CornCropBlock) block).getAgeProperty()),
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(((CornCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }

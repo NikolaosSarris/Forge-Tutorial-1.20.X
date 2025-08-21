@@ -86,6 +86,11 @@ public class ModItemModelProvider extends ItemModelProvider
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
         trimmedArmorItem(ModItems.SAPPHIRE_LEGGINGS);
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
+
+        simpleItem(ModItems.CORN);
+        simpleItem(ModItems.CORN_SEEDS);
+
+        evenSimplerBlockItem(ModBlocks.CATMINT);
     }
 
     //Helper method to generate the trimmed armor items
