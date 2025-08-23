@@ -5,6 +5,7 @@ import net.greekboy.greekboymod.block.ModBlocks;
 import net.greekboy.greekboymod.item.ModCreativeModeTabs;
 import net.greekboy.greekboymod.item.ModItems;
 import net.greekboy.greekboymod.loot.ModLootModifiers;
+import net.greekboy.greekboymod.villager.ModVillagers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -45,6 +46,9 @@ public class TutorialMod
 
         //Registers the loot modifiers
         ModLootModifiers.register(modEventBus);
+
+        //Registers custom villagers
+        ModVillagers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

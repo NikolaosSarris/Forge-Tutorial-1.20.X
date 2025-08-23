@@ -53,6 +53,8 @@
 
   "block.greekboymod.catmint": "Catmint",
 
+  "entity.minecraft.villager.greekboymod.soundmaster": "Sound Master",
+
   "tooltip.greekboymod.metal_detector.tooltip": "Finds valuables underground",
 
   "creativetab.tutorial_tab": "GreekBoy Mod"

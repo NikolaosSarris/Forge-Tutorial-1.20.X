@@ -2,7 +2,9 @@ package net.greekboy.greekboymod.event;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.greekboy.greekboymod.TutorialMod;
+import net.greekboy.greekboymod.block.ModBlocks;
 import net.greekboy.greekboymod.item.ModItems;
+import net.greekboy.greekboymod.villager.ModVillagers;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.EnchantedBookItem;
@@ -52,6 +54,22 @@ public class ModEvents
                     new ItemStack(Items.EMERALD, 32),
                     enchantedBook,
                     10, 8, 0.02f));
+        }
+
+        if (event.getType() == ModVillagers.SOUND_MASTER.get())
+        {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+            //Adding a custom trade
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 16),
+                    new ItemStack(ModBlocks.SOUND_BLOCK.get()),
+                    10, 8, 0.02f));
+
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 6),
+                    new ItemStack(ModItems.SAPPHIRE.get(), 6),
+                    5, 12, 0.02f));
         }
     }
 
