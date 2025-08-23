@@ -55,6 +55,8 @@
 
   "entity.minecraft.villager.greekboymod.soundmaster": "Sound Master",
 
+  "sounds.greekboymod.metal_detector_found_ore": "Metal Detector Jingle",
+
   "tooltip.greekboymod.metal_detector.tooltip": "Finds valuables underground",
 
   "creativetab.tutorial_tab": "GreekBoy Mod"

@@ -5,6 +5,7 @@ import net.greekboy.greekboymod.block.custom.CornCropBlock;
 import net.greekboy.greekboymod.block.custom.SoundBlock;
 import net.greekboy.greekboymod.block.custom.StrawberryCropBlock;
 import net.greekboy.greekboymod.item.ModItems;
+import net.greekboy.greekboymod.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -49,7 +50,7 @@ public class ModBlocks
 
     //Variable registering the custom sound block
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
-            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.SOUND_BLOCK_SOUNDS)));
 
     //Variables for registering stairs and slabs
     public static final RegistryObject<Block> SAPPHIRE_STAIRS = registerBlock("sapphire_stairs",

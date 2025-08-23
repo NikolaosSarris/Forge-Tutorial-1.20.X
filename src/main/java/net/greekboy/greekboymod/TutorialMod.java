@@ -5,6 +5,7 @@ import net.greekboy.greekboymod.block.ModBlocks;
 import net.greekboy.greekboymod.item.ModCreativeModeTabs;
 import net.greekboy.greekboymod.item.ModItems;
 import net.greekboy.greekboymod.loot.ModLootModifiers;
+import net.greekboy.greekboymod.sound.ModSounds;
 import net.greekboy.greekboymod.villager.ModVillagers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -49,6 +50,9 @@ public class TutorialMod
 
         //Registers custom villagers
         ModVillagers.register(modEventBus);
+
+        //Registers the custom sounds
+        ModSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
