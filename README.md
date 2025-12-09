@@ -29,9 +29,4 @@ While developing this mod, I aimed to enhance player creativity and engagement b
 - Forge Modding API  
 - IntelliJ IDEA  
 - Asset/Data Generation  
-- Debugging & Testing in a modded environment  
-
-## Future Improvements
-- Additional custom mobs  
-- Improved textures and sound effects  
-- More integration with existing Minecraft systems
+- Debugging & Testing in a modded environment
