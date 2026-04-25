@@ -34,5 +34,13 @@
     "sounds": [
       "greekboymod:sound_block_fall"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "greekboymod:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }

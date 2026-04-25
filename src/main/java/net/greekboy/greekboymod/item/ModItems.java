@@ -6,6 +6,7 @@ import net.greekboy.greekboymod.item.custom.FuelItem;
 import net.greekboy.greekboymod.item.custom.MetalDetectorItem;
 import net.greekboy.greekboymod.item.custom.ModArmorItem;
 import net.greekboy.greekboymod.item.custom.PipeWrenchItem;
+import net.greekboy.greekboymod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -88,6 +89,10 @@ public class ModItems
             () -> new ItemNameBlockItem(ModBlocks.CORN_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CORN = ITEMS.register("corn",
             () -> new Item(new Item.Properties().food(ModFoods.CORN)));
+
+    //Static variable for the music disk
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new RecordItem(6, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 2240));
 
     //Static method the register the items
     public static void register(IEventBus eventBus)

@@ -51,6 +51,9 @@
   "item.greekboymod.corn": "Corn",
   "item.greekboymod.corn_seeds": "Corn Seeds",
 
+  "item.greekboymod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.greekboymod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
   "block.greekboymod.catmint": "Catmint",
 
   "entity.minecraft.villager.greekboymod.soundmaster": "Sound Master",
