@@ -94,6 +94,10 @@ public class ModItems
     public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new RecordItem(6, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 2240));
 
+    //Static variable for the screwdriver
+    public static final RegistryObject<Item> SCREWDRIVER = ITEMS.register("screwdriver",
+            () -> new Item(new Item.Properties()));
+
     //Static method the register the items
     public static void register(IEventBus eventBus)
     {

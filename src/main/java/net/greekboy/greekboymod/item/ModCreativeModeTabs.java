@@ -78,6 +78,8 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.CATMINT.get());
 
                         output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+
+                        output.accept(ModItems.SCREWDRIVER.get());
                     })
                     .build());
 
