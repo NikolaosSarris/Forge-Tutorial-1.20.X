@@ -93,6 +93,7 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(ModItems.BAR_BRAWL_MUSIC_DISC);
 
         handheldItem(ModItems.SCREWDRIVER);
+        handheldItem(ModItems.DRILL);
 
         evenSimplerBlockItem(ModBlocks.CATMINT);
     }

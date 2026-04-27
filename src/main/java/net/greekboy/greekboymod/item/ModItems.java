@@ -98,6 +98,10 @@ public class ModItems
     public static final RegistryObject<Item> SCREWDRIVER = ITEMS.register("screwdriver",
             () -> new Item(new Item.Properties()));
 
+    //Static variable for the drill
+    public static final RegistryObject<Item> DRILL = ITEMS.register("drill",
+            () -> new Item(new Item.Properties()));
+
     //Static method the register the items
     public static void register(IEventBus eventBus)
     {

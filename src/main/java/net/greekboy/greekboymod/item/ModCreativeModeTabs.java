@@ -80,6 +80,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
                         output.accept(ModItems.SCREWDRIVER.get());
+                        output.accept(ModItems.DRILL.get());
                     })
                     .build());
 
